@@ -1,0 +1,6 @@
+torch>=2.2.0
+torchvision>=0.18.0
+numpy
+pillow
+tqdm
+efficientnet-pytorch

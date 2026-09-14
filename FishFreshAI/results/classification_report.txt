@@ -1,0 +1,25 @@
+FISH FRESHNESS DETECTION - CLASSIFICATION REPORT
+==================================================
+
+Model: EfficientNet-B0 (Transfer Learning)
+Test Samples: 787
+Test Accuracy: 99.62%
+
+              precision    recall  f1-score   support
+
+   Non-Fresh       1.00      0.99      1.00       573
+       Fresh       0.99      1.00      0.99       214
+
+    accuracy                           1.00       787
+   macro avg       0.99      1.00      1.00       787
+weighted avg       1.00      1.00      1.00       787
+
+==================================================
+Training Parameters:
+  Epochs: 15
+  Batch Size: 32
+  Learning Rate: 1e-3
+  Optimizer: AdamW
+  Loss Function: BCEWithLogitsLoss
+  LR Scheduler: ReduceLROnPlateau
+  Early Stopping Patience: 7
